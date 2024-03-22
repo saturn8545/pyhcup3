@@ -18,8 +18,8 @@ import os
 import re
 
 # move these into local namespace
-import meta as pyhcup_meta
-import parser
+from .meta import *
+from .parser import *
 from .config import MISSING_PATTERNS, LONG_TABLE_DEFINITIONS
 
 def column_clause(dictionary, constraints=None, all_char_as_varchar=True):
